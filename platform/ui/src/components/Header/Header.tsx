@@ -56,34 +56,7 @@ function Header({
           </div>
         </div>
         <div className="flex items-center">{children}</div>
-        <div className="flex items-center">
-          <span className="text-common-light mr-3 text-lg">{t('INVESTIGATIONAL USE ONLY')}</span>
-          <Dropdown
-            id="options"
-            showDropdownIcon={false}
-            list={menuOptions}
-            alignment="right"
-          >
-            <IconButton
-              id={'options-settings-icon'}
-              variant="text"
-              color="inherit"
-              size="initial"
-              className="text-primary-active"
-            >
-              <Icon name="settings" />
-            </IconButton>
-            <IconButton
-              id={'options-chevron-down-icon'}
-              variant="text"
-              color="inherit"
-              size="initial"
-              className="text-primary-active"
-            >
-              <Icon name="chevron-down" />
-            </IconButton>
-          </Dropdown>
-        </div>
+        <div className="flex items-center"></div>
       </div>
     </NavBar>
   );
