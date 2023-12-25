@@ -5,7 +5,7 @@ import classnames from 'classnames';
 import Icon from '../Icon';
 
 const baseClasses =
-  'first:border-0 border-t border-secondary-light cursor-pointer select-none outline-none';
+  'first:border-0 border-t border-secondary-light cursor-pointer select-none outline-none hidden';
 
 const StudyItem = ({
   date,
