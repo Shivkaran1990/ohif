@@ -304,6 +304,26 @@ const toolbarButtons: Button[] = [
       ],
     },
   },
+  ////
+  {
+    id: 'Probe',
+    type: 'ohif.radioGroup',
+    props: {
+      type: 'tool',
+      icon: 'tool-probe',
+      label: 'Probe',
+      commands: [
+        {
+          commandName: 'setToolActive',
+          commandOptions: {
+            toolName: 'DragProbe',
+          },
+          context: 'CORNERSTONE',
+        },
+      ],
+    },
+  },
+  ////
   {
     id: 'Layout',
     type: 'ohif.splitButton',
@@ -398,6 +418,26 @@ const toolbarButtons: Button[] = [
       ],
     },
   },
+  ////
+  {
+    id: 'Probe',
+    type: 'ohif.radioGroup',
+    props: {
+      type: 'tool',
+      icon: 'tool-probe',
+      label: 'Probe',
+      commands: [
+        {
+          commandName: 'setToolActive',
+          commandOptions: {
+            toolName: 'DragProbe',
+          },
+          context: 'CORNERSTONE',
+        },
+      ],
+    },
+  },
+  ////
   {
     id: 'MPR',
     type: 'ohif.action',

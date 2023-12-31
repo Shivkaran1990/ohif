@@ -108,6 +108,7 @@ function modeFactory() {
       toolbarService.init(extensionManager);
       toolbarService.addButtons(toolbarButtons);
       toolbarService.createButtonSection('primary', [
+        'Probe',
         'MeasurementTools',
         'Zoom',
         'WindowLevel',
