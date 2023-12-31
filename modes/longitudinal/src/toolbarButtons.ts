@@ -308,7 +308,7 @@ const toolbarButtons: Button[] = [
       ],
     },
   },
-  ////
+  //// Shivkaran
   {
     id: 'Probe',
     type: 'ohif.radioGroup',
@@ -327,7 +327,55 @@ const toolbarButtons: Button[] = [
       ],
     },
   },
-  ////
+  {
+    id: 'rotate-right',
+    type: 'ohif.radioGroup',
+    props: {
+      type: 'rotate-right',
+      icon: 'tool-rotate-right',
+      label: 'Rotate Right',
+      commands: [
+        {
+          commandName: 'rotateViewportCW',
+          commandOptions: {},
+          context: 'CORNERSTONE',
+        },
+      ],
+    },
+  },
+  {
+    id: 'flip-horizontal',
+    type: 'ohif.radioGroup',
+    props: {
+      type: 'flip-horizontal',
+      icon: 'tool-flip-horizontal',
+      label: 'Flip Horizontally',
+      commands: [
+        {
+          commandName: 'flipViewportHorizontal',
+          commandOptions: {},
+          context: 'CORNERSTONE',
+        },
+      ],
+    },
+  },
+  {
+    id: 'StackImageSync',
+    type: 'ohif.radioGroup',
+    props: {
+      type: 'link',
+      icon: 'link',
+      label: 'Stack Image Sync',
+      commands: [
+        {
+          commandName: 'toggleStackImageSync',
+          commandOptions: {},
+          context: 'CORNERSTONE',
+        },
+      ],
+    },
+  },
+  //// Shivkaran
   {
     id: 'Layout',
     type: 'ohif.layoutSelector',
