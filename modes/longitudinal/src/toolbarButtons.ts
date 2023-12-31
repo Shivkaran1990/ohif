@@ -308,6 +308,26 @@ const toolbarButtons: Button[] = [
       ],
     },
   },
+  ////
+  {
+    id: 'Probe',
+    type: 'ohif.radioGroup',
+    props: {
+      type: 'Probe',
+      icon: 'tool-probe',
+      label: 'Probe',
+      commands: [
+        {
+          commandName: 'setToolActive',
+          commandOptions: {
+            toolName: 'DragProbe',
+          },
+          context: 'CORNERSTONE',
+        },
+      ],
+    },
+  },
+  ////
   {
     id: 'Layout',
     type: 'ohif.layoutSelector',
