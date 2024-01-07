@@ -115,7 +115,7 @@ function modeFactory({ modeConfiguration }) {
       toolbarService.addButtons(toolbarButtons);
       toolbarService.createButtonSection('primary', [
         'StackImageSync',
-        'flip-horizontal',
+        'StackScroll',
         'rotate-right',
         'Probe',
         'MeasurementTools',

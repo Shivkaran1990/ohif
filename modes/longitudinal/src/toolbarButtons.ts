@@ -313,7 +313,7 @@ const toolbarButtons: Button[] = [
     id: 'Probe',
     type: 'ohif.radioGroup',
     props: {
-      type: 'Probe',
+      type: 'tool',
       icon: 'tool-probe',
       label: 'Probe',
       commands: [
@@ -331,7 +331,7 @@ const toolbarButtons: Button[] = [
     id: 'rotate-right',
     type: 'ohif.radioGroup',
     props: {
-      type: 'rotate-right',
+      type: 'tool',
       icon: 'tool-rotate-right',
       label: 'Rotate Right',
       commands: [
@@ -344,15 +344,15 @@ const toolbarButtons: Button[] = [
     },
   },
   {
-    id: 'flip-horizontal',
+    id: 'StackImageSync',
     type: 'ohif.radioGroup',
     props: {
-      type: 'flip-horizontal',
-      icon: 'tool-flip-horizontal',
-      label: 'Flip Horizontally',
+      type: 'tool',
+      icon: 'link',
+      label: 'Stack Image Sync',
       commands: [
         {
-          commandName: 'flipViewportHorizontal',
+          commandName: 'toggleStackImageSync',
           commandOptions: {},
           context: 'CORNERSTONE',
         },
@@ -360,16 +360,18 @@ const toolbarButtons: Button[] = [
     },
   },
   {
-    id: 'StackImageSync',
+    id: 'StackScroll',
     type: 'ohif.radioGroup',
     props: {
-      type: 'link',
-      icon: 'link',
-      label: 'Stack Image Sync',
+      type: 'tool',
+      icon: 'tool-stack-scroll',
+      label: 'Stack Scroll',
       commands: [
         {
-          commandName: 'toggleStackImageSync',
-          commandOptions: {},
+          commandName: 'setToolActive',
+          commandOptions: {
+            toolName: 'StackScroll',
+          },
           context: 'CORNERSTONE',
         },
       ],
