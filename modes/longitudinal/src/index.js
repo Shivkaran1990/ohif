@@ -136,7 +136,6 @@ function modeFactory({ modeConfiguration }) {
         'Layout',
         'MPR',
         'Crosshairs',
-        'MoreTools',
       ]);
 
       customizationService.addModeCustomizations([

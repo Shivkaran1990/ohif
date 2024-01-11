@@ -541,17 +541,15 @@ const toolbarButtons: Button[] = [
   },
   {
     id: 'TagBrowser',
-    type: 'ohif.radioGroup',
+    type: 'ohif.action',
     props: {
-      type: 'tool',
+      type: 'action',
       icon: 'list-bullets',
       label: 'Dicom Tag Browser',
       commands: [
         {
           commandName: 'openDICOMTagViewer',
-          commandOptions: {
-            toolName: 'TagBrowser',
-          },
+          commandOptions: {},
           context: 'CORNERSTONE',
         },
       ],
