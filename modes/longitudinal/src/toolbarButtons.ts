@@ -377,6 +377,186 @@ const toolbarButtons: Button[] = [
       ],
     },
   },
+  {
+    id: 'flip-horizontal',
+    type: 'ohif.radioGroup',
+    props: {
+      type: 'tool',
+      icon: 'tool-flip-horizontal',
+      label: 'Flip Horizontal',
+      commands: [
+        {
+          commandName: 'flipViewportHorizontal',
+          commandOptions: {
+            toolName: 'flip-horizontal',
+          },
+          context: 'CORNERSTONE',
+        },
+      ],
+    },
+  },
+  {
+    id: 'ReferenceLines',
+    type: 'ohif.radioGroup',
+    props: {
+      type: 'tool',
+      icon: 'tool-referenceLines',
+      label: 'Reference Lines',
+      commands: [
+        {
+          commandName: 'ReferenceLinesCommands',
+          commandOptions: {
+            toolName: 'ReferenceLines',
+          },
+          context: 'CORNERSTONE',
+        },
+      ],
+    },
+  },
+  {
+    id: 'ImageOverlayViewer',
+    type: 'ohif.radioGroup',
+    props: {
+      type: 'tool',
+      icon: 'toggle-dicom-overlay',
+      label: 'Image Overlay',
+      commands: [
+        {
+          commandName: 'setToolActive',
+          commandOptions: {
+            toolName: 'ImageOverlayViewer',
+          },
+          context: 'CORNERSTONE',
+        },
+      ],
+    },
+  },
+  {
+    id: 'invert',
+    type: 'ohif.radioGroup',
+    props: {
+      type: 'tool',
+      icon: 'tool-invert',
+      label: 'Invert',
+      commands: [
+        {
+          commandName: 'invertViewport',
+          commandOptions: {
+            toolName: 'invert',
+          },
+          context: 'CORNERSTONE',
+        },
+      ],
+    },
+  },
+  {
+    id: 'cine',
+    type: 'ohif.radioGroup',
+    props: {
+      type: 'tool',
+      icon: 'tool-cine',
+      label: 'Cine',
+      commands: [
+        {
+          commandName: 'toggleCine',
+          commandOptions: {
+            toolName: 'cine',
+          },
+          context: 'CORNERSTONE',
+        },
+      ],
+    },
+  },
+  {
+    id: 'Angle',
+    type: 'ohif.radioGroup',
+    props: {
+      type: 'tool',
+      icon: 'tool-angle',
+      label: 'Angle',
+      commands: [
+        {
+          commandName: 'setToolActive',
+          commandOptions: {
+            toolName: 'Angle',
+          },
+          context: 'CORNERSTONE',
+        },
+      ],
+    },
+  },
+  {
+    id: 'Magnify',
+    type: 'ohif.radioGroup',
+    props: {
+      type: 'tool',
+      icon: 'tool-magnify',
+      label: 'Magnify',
+      commands: [
+        {
+          commandName: 'setToolActive',
+          commandOptions: {
+            toolName: 'Magnify',
+          },
+          context: 'CORNERSTONE',
+        },
+      ],
+    },
+  },
+  {
+    id: 'Rectangle',
+    type: 'ohif.radioGroup',
+    props: {
+      type: 'tool',
+      icon: 'tool-rectangle',
+      label: 'Rectangle',
+      commands: [
+        {
+          commandName: 'setToolActive',
+          commandOptions: {
+            toolName: 'RectangleROI',
+          },
+          context: 'CORNERSTONE',
+        },
+      ],
+    },
+  },
+  {
+    id: 'CalibrationLine',
+    type: 'ohif.radioGroup',
+    props: {
+      type: 'tool',
+      icon: 'tool-calibration',
+      label: 'Calibration',
+      commands: [
+        {
+          commandName: 'setToolActive',
+          commandOptions: {
+            toolName: 'CalibrationLine',
+          },
+          context: 'CORNERSTONE',
+        },
+      ],
+    },
+  },
+  {
+    id: 'TagBrowser',
+    type: 'ohif.radioGroup',
+    props: {
+      type: 'tool',
+      icon: 'list-bullets',
+      label: 'Dicom Tag Browser',
+      commands: [
+        {
+          commandName: 'openDICOMTagViewer',
+          commandOptions: {
+            toolName: 'TagBrowser',
+          },
+          context: 'CORNERSTONE',
+        },
+      ],
+    },
+  },
   //// Shivkaran
   {
     id: 'Layout',
