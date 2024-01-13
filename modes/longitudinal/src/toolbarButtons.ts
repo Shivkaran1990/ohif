@@ -550,7 +550,7 @@ const toolbarButtons: Button[] = [
         {
           commandName: 'openDICOMTagViewer',
           commandOptions: {},
-          context: 'CORNERSTONE',
+          context: 'DEFAULT',
         },
       ],
     },
