@@ -121,6 +121,7 @@ function modeFactory({ modeConfiguration }) {
         'MPR',
         'Pan',
         'MeasurementTools',
+        'Reset',
         'Layout',
         'Probe',
         'Rectangle',
@@ -136,7 +137,6 @@ function modeFactory({ modeConfiguration }) {
         'ImageOverlayViewer',
         'ReferenceLines',
         'flip-horizontal',
-        'Reset',
       ]);
 
       customizationService.addModeCustomizations([
