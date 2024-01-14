@@ -46,7 +46,15 @@
       console.time('scriptToView');
       window.PUBLIC_URL = '<%= PUBLIC_URL %>';
     </script>
+
     <link
+      rel="icon"
+      type="image/png"
+      sizes="40x40"
+      href="<%= PUBLIC_URL %>assets/radshare-logo.png"
+    />
+
+    <!-- <link
       rel="manifest"
       href="<%= PUBLIC_URL %>manifest.json"
     />
@@ -181,7 +189,7 @@
     <link
       rel="yandex-tableau-widget"
       href="<%= PUBLIC_URL %>assets/yandex-browser-manifest.json"
-    />
+    /> -->
 
     <!-- Built with: https://polyfill.io/v3/url-builder/ -->
     <!-- Targets IE11 -->
@@ -200,7 +208,7 @@
       src="<%= PUBLIC_URL %>init-service-worker.js"
     ></script>
 
-    <title>OHIF Viewer</title>
+    <title>RadShare</title>
 
     <!-- WEB FONTS -->
     <link

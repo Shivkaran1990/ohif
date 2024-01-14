@@ -555,6 +555,22 @@ const toolbarButtons: Button[] = [
       ],
     },
   },
+  {
+    id: 'Reset',
+    type: 'ohif.radioGroup',
+    props: {
+      type: 'tool',
+      icon: 'tool-reset',
+      label: 'Reset View',
+      commands: [
+        {
+          commandName: 'resetViewport',
+          commandOptions: {},
+          context: 'CORNERSTONE',
+        },
+      ],
+    },
+  },
   //// Shivkaran
   {
     id: 'Layout',

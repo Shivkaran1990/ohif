@@ -114,9 +114,21 @@ function modeFactory({ modeConfiguration }) {
       toolbarService.init(extensionManager);
       toolbarService.addButtons(toolbarButtons);
       toolbarService.createButtonSection('primary', [
+        'StackImageSync',
+        'StackScroll',
+        'Zoom',
+        'WindowLevel',
+        'MPR',
+        'Pan',
+        'MeasurementTools',
+        'Layout',
+        'Probe',
+        'Rectangle',
+        'rotate-right',
+        'Crosshairs',
+        'Capture',
         'TagBrowser',
         'CalibrationLine',
-        'Rectangle',
         'Magnify',
         'Angle',
         'cine',
@@ -124,18 +136,7 @@ function modeFactory({ modeConfiguration }) {
         'ImageOverlayViewer',
         'ReferenceLines',
         'flip-horizontal',
-        'StackImageSync',
-        'StackScroll',
-        'rotate-right',
-        'Probe',
-        'MeasurementTools',
-        'Zoom',
-        'WindowLevel',
-        'Pan',
-        'Capture',
-        'Layout',
-        'MPR',
-        'Crosshairs',
+        'Reset',
       ]);
 
       customizationService.addModeCustomizations([
