@@ -310,6 +310,30 @@ const toolbarButtons: Button[] = [
   },
   //// Shivkaran
   {
+    id: 'ReferenceLines',
+    type: 'ohif.radioGroup',
+    props: {
+      type: 'toggle',
+      icon: 'tool-referenceLines',
+      label: 'Reference Lines',
+      commands: [
+        {
+          commandName: 'setSourceViewportForReferenceLinesTool',
+          commandOptions: {},
+          context: 'CORNERSTONE',
+        },
+        {
+          commandName: 'setToolActive',
+          commandOptions: {
+            toolName: 'ReferenceLines',
+          },
+          context: 'CORNERSTONE',
+        },
+      ],
+    },
+  },
+
+  {
     id: 'Probe',
     type: 'ohif.radioGroup',
     props: {

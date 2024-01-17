@@ -114,7 +114,7 @@ function modeFactory({ modeConfiguration }) {
       toolbarService.init(extensionManager);
       toolbarService.addButtons(toolbarButtons);
       toolbarService.createButtonSection('primary', [
-        //'ReferenceLines',
+        'ReferenceLines',
         'StackImageSync',
         'StackScroll',
         'Zoom',
@@ -137,7 +137,7 @@ function modeFactory({ modeConfiguration }) {
         'invert',
         'ImageOverlayViewer',
         'flip-horizontal',
-        'MoreTools',
+        //'MoreTools',
       ]);
 
       customizationService.addModeCustomizations([
