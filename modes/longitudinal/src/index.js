@@ -114,10 +114,11 @@ function modeFactory({ modeConfiguration }) {
       toolbarService.init(extensionManager);
       toolbarService.addButtons(toolbarButtons);
       toolbarService.createButtonSection('primary', [
-        'ReferenceLines',
+        //'ReferenceLines',
         'StackImageSync',
         'StackScroll',
         'Zoom',
+        'Magnify',
         'WindowLevel',
         'MPR',
         'Pan',
@@ -131,13 +132,12 @@ function modeFactory({ modeConfiguration }) {
         'Capture',
         'TagBrowser',
         'CalibrationLine',
-        'Magnify',
         'Angle',
         'cine',
         'invert',
         'ImageOverlayViewer',
         'flip-horizontal',
-        //'MoreTools',
+        'MoreTools',
       ]);
 
       customizationService.addModeCustomizations([

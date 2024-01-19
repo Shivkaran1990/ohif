@@ -281,57 +281,7 @@ const toolbarButtons: Button[] = [
       ],
     },
   },
-  // Pan...
-  {
-    id: 'Pan',
-    type: 'ohif.radioGroup',
-    props: {
-      type: 'tool',
-      icon: 'tool-move',
-      label: 'Pan',
-      commands: _createSetToolActiveCommands('Pan'),
-    },
-  },
-  {
-    id: 'Capture',
-    type: 'ohif.action',
-    props: {
-      icon: 'tool-capture',
-      label: 'Capture',
-      type: 'action',
-      commands: [
-        {
-          commandName: 'showDownloadViewportModal',
-          commandOptions: {},
-          context: 'CORNERSTONE',
-        },
-      ],
-    },
-  },
   //// Shivkaran
-  {
-    id: 'ReferenceLines',
-    type: 'ohif.radioGroup',
-    props: {
-      type: 'toggle',
-      icon: 'tool-referenceLines',
-      label: 'Reference Lines',
-      commands: [
-        {
-          commandName: 'setSourceViewportForReferenceLinesTool',
-          commandOptions: {},
-          context: 'CORNERSTONE',
-        },
-        {
-          commandName: 'setToolActive',
-          commandOptions: {
-            toolName: 'ReferenceLines',
-          },
-          context: 'CORNERSTONE',
-        },
-      ],
-    },
-  },
 
   {
     id: 'Probe',
@@ -577,7 +527,35 @@ const toolbarButtons: Button[] = [
       ],
     },
   },
+
   //// Shivkaran
+  // Pan...
+  {
+    id: 'Pan',
+    type: 'ohif.radioGroup',
+    props: {
+      type: 'tool',
+      icon: 'tool-move',
+      label: 'Pan',
+      commands: _createSetToolActiveCommands('Pan'),
+    },
+  },
+  {
+    id: 'Capture',
+    type: 'ohif.action',
+    props: {
+      icon: 'tool-capture',
+      label: 'Capture',
+      type: 'action',
+      commands: [
+        {
+          commandName: 'showDownloadViewportModal',
+          commandOptions: {},
+          context: 'CORNERSTONE',
+        },
+      ],
+    },
+  },
   {
     id: 'Layout',
     type: 'ohif.layoutSelector',
@@ -644,45 +622,13 @@ const toolbarButtons: Button[] = [
         }
       ),
       secondary: {
-        icon: 'chevron-down',
+        icon: 'icon-next-inactive',
         label: '',
-        isActive: true,
+        isActive: false,
         //tooltip: 'More Tools',
         tooltip: '',
       },
-      items: [
-        // Next two tools can be added once icons are added
-        // _createToolButton(
-        //   'Cobb Angle',
-        //   'tool-cobb-angle',
-        //   'Cobb Angle',
-        //   [
-        //     {
-        //       commandName: 'setToolActive',
-        //       commandOptions: {
-        //         toolName: 'CobbAngle',
-        //       },
-        //       context: 'CORNERSTONE',
-        //     },
-        //   ],
-        //   'Cobb Angle'
-        // ),
-        // _createToolButton(
-        //   'Planar Freehand ROI',
-        //   'tool-freehand',
-        //   'PlanarFreehandROI',
-        //   [
-        //     {
-        //       commandName: 'setToolActive',
-        //       commandOptions: {
-        //         toolName: 'PlanarFreehandROI',
-        //       },
-        //       context: 'CORNERSTONE',
-        //     },
-        //   ],
-        //   'Planar Freehand ROI'
-        // ),
-      ],
+      items: [],
     },
   },
 ];

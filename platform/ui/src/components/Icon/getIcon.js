@@ -307,7 +307,7 @@ function addIcon(iconName, iconSVG) {
  */
 export default function getIcon(key, props) {
   if (!key || !ICONS[key]) {
-    return React.createElement('div', null, 'Missing Icon');
+    return React.createElement('div', null, '');
   }
 
   return React.createElement(ICONS[key], props);
